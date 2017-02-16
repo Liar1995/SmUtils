@@ -1,0 +1,61 @@
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    /*   compile('com.android.support:support-v7:23.1.0',{
+                    exclude group: 'com.android.support', module: 'appcompat-v7'
+                })*/
+    compile project(':GeneqiaoIM')
+    /** ***mvp模式                     ***/
+    compile 'com.jude:beam:2.9.4'
+    /** 注解                     ***/
+    compile 'com.jakewharton:butterknife:7.0.1'
+    /** **eventbus框架          **/
+    compile 'org.greenrobot:eventbus:3.0.0'
+    /** 阿里oss */
+    compile files('libs/aliyun-oss-sdk-android-2.3.0.jar')
+    /** okhtpp   ****/
+    compile 'com.zhy:okhttputils:2.6.2'
+    /** *switch开关  ****/
+    compile 'com.kyleduo.switchbutton:library:1.3.4'
+    /** json 解析  **/
+    compile 'com.alibaba:fastjson:1.1.52.android'
+    /** 数据库        ***/
+    compile 'com.github.satyan:sugar:1.5'
+    /** 视频排序拍摄        ***/
+    /** *相册        ****/
+    compile project(':GeneqiaoGallery')
+    /** *设置link事件          **/
+    compile 'com.klinkerapps:link_builder:1.3.2@aar'
+    /** 广告位     **/
+    compile 'com.jude:rollviewpager:1.4.6'
+    /** **  数据统计 *    ***/
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    /** *加载对话框        **/
+    compile 'com.kaopiz:kprogresshud:1.0.1'
+    /** gif动图        **/
+    /** 消息未读        ***/
+    compile project(':tipsview')
+    /** **应用图标显示          **/
+    compile 'me.leolin:ShortcutBadger:1.1.10@aar'
+    /** *分享    **/
+    compile files('libs/alipaySdk-20160516.jar')
+    /** *qq分享sdk   ***/
+    compile files('libs/open_sdk_r5756_lite.jar')
+    /** *视频压缩   */
+    compile files('libs/videoScale.jar')
+    /** **微信粉线sdk                 ***/
+    compile files('libs/libammsdk.jar')
+    compile project(':GeneqiaoPlayer')
+    compile 'com.android.support:multidex:1.0.1'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    provided("com.tencent.tinker:tinker-android-anno:${TINKER_PATCH_VERSION}") { changing = true }
+    compile("com.tinkerpatch.sdk:tinkerpatch-android-sdk:${TINKER_PATCH_VERSION2}") {
+        changing = true
+    }
+    compile project(':GeneqiaoVideoRecorder')
+    compile files('libs/core-3.3.0.jar')
