@@ -7,7 +7,8 @@
 [7，Android性能优化-3](http://www.jianshu.com/p/b3b09fa29f65)</br>
 [8，RxAndroid常用操作符](http://www.jianshu.com/p/3e8d3fb5685c)</br>
 [9，零散知识整理(IReader)](http://www.jianshu.com/p/bca1ab9abeee)</br>
-[10，LearningNotes](https://github.com/GeniusVJR/LearningNotes)
+[10，LearningNotes](https://github.com/GeniusVJR/LearningNotes)</br>
+[11，黄老师笔记](http://www.jianshu.com/p/bca1ab9abeee)</br>
 
 
 
